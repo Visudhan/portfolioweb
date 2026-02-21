@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visudhan — Backend Developer Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Visudhan — a passionate CS student and aspiring backend developer specializing in Python, Django, and modern web technologies." />
+  <meta property="og:title" content="Visudhan — Backend Developer Portfolio" />
+  <meta property="og:description" content="CS student & aspiring backend developer. Python · Django · Web." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts — Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <!-- Phosphor Icons (lightweight icon set) -->
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/regular/style.css" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- ═══════════════════════════════════════════
+       NAVIGATION
+  ════════════════════════════════════════════ -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>Visudhan<span class="logo-bracket"> /&gt;</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#journey" class="nav-link">Journey</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       HERO SECTION
+  ════════════════════════════════════════════ -->
+  <section id="hero" class="hero">
+    <div class="hero-bg-glow"></div>
+    <div class="container hero-content">
+      <p class="hero-greeting reveal">Hi, I'm</p>
+      <h1 class="hero-name reveal">Visudhan</h1>
+      <p class="hero-tagline reveal">
+        <span class="tagline-static">I'm a </span>
+        <span class="tagline-rotate" id="taglineRotate"></span>
+        <span class="tagline-cursor">|</span>
+      </p>
+      <p class="hero-desc reveal">
+        Building clean, scalable backends — one project at a time.
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       ABOUT SECTION
+  ════════════════════════════════════════════ -->
+  <section id="about" class="section about">
+    <div class="container">
+      <h2 class="section-title reveal">
+        <span class="section-number">01.</span> About Me
+      </h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm a <strong>Computer Science student</strong> with a deep curiosity
+            for how things work behind the scenes. My journey into development
+            started with simple HTML pages and has evolved into building
+            full-stack web applications with <strong>Python</strong> and
+            <strong>Django</strong>.
+          </p>
+          <p>
+            I believe in learning by doing — every project I build teaches me
+            something new. I'm currently focused on strengthening my
+            <strong>backend development</strong> skills, exploring RESTful APIs,
+            database design, and writing clean, maintainable code.
+          </p>
+          <p>
+            Beyond coding, I'm excited about <strong>freelancing</strong> and
+            leveraging <strong>AI-powered tools</strong> to accelerate
+            development. I thrive on challenges, enjoy problem-solving, and
+            I'm always looking for opportunities to grow.
+          </p>
+        </div>
+        <div class="about-highlights reveal">
+          <div class="highlight-card">
+            <span class="highlight-icon"><i class="ph ph-code"></i></span>
+            <h3>Backend Focus</h3>
+            <p>Python, Django, REST APIs</p>
+          </div>
+          <div class="highlight-card">
+            <span class="highlight-icon"><i class="ph ph-graduation-cap"></i></span>
+            <h3>CS Student</h3>
+            <p>Always learning, always building</p>
+          </div>
+          <div class="highlight-card">
+            <span class="highlight-icon"><i class="ph ph-rocket-launch"></i></span>
+            <h3>Growth Mindset</h3>
+            <p>Embracing challenges & new tech</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SKILLS SECTION
+  ════════════════════════════════════════════ -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <h2 class="section-title reveal">
+        <span class="section-number">02.</span> Skills
+      </h2>
+      <div class="skills-grid">
+        <!-- Languages -->
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <i class="ph ph-terminal-window"></i>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">JavaScript</span>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <i class="ph ph-database"></i>
+            <h3>Backend</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Django</span>
+            <span class="skill-tag learning">Flask <small>(learning)</small></span>
+          </div>
+        </div>
+
+        <!-- Frontend -->
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <i class="ph ph-browser"></i>
+            <h3>Frontend</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">JavaScript</span>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <i class="ph ph-wrench"></i>
+            <h3>Tools</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">AI Tools</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       PROJECTS SECTION
+  ════════════════════════════════════════════ -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2 class="section-title reveal">
+        <span class="section-number">03.</span> Projects
+      </h2>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card reveal">
+          <div class="project-card-header">
+            <i class="ph ph-folder-notch-open project-icon"></i>
+            <div class="project-links">
+              <a href="https://github.com/Visudhan" target="_blank" rel="noopener" aria-label="GitHub">
+                <i class="ph ph-github-logo"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Portfolio Website</h3>
+          <p class="project-desc">
+            A clean, modern developer portfolio built from scratch with
+            vanilla HTML, CSS, and JavaScript. Dark theme with smooth
+            animations.
+          </p>
+          <div class="project-tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card reveal">
+          <div class="project-card-header">
+            <i class="ph ph-folder-notch-open project-icon"></i>
+            <div class="project-links">
+              <a href="https://github.com/Visudhan" target="_blank" rel="noopener" aria-label="GitHub">
+                <i class="ph ph-github-logo"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Django Blog App</h3>
+          <p class="project-desc">
+            Full-featured blog application with user authentication,
+            CRUD operations, and a responsive admin dashboard.
+          </p>
+          <div class="project-tech">
+            <span>Python</span><span>Django</span><span>SQLite</span>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card reveal">
+          <div class="project-card-header">
+            <i class="ph ph-folder-notch-open project-icon"></i>
+            <div class="project-links">
+              <a href="https://github.com/Visudhan" target="_blank" rel="noopener" aria-label="GitHub">
+                <i class="ph ph-github-logo"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Phone Usage Detector</h3>
+          <p class="project-desc">
+            Computer-vision based app that detects phone usage using
+            depth-invariant distance and logs sessions in real time.
+          </p>
+          <div class="project-tech">
+            <span>Python</span><span>OpenCV</span><span>MediaPipe</span>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card reveal">
+          <div class="project-card-header">
+            <i class="ph ph-folder-notch-open project-icon"></i>
+            <div class="project-links">
+              <a href="https://github.com/Visudhan" target="_blank" rel="noopener" aria-label="GitHub">
+                <i class="ph ph-github-logo"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">To-Do API</h3>
+          <p class="project-desc">
+            RESTful API for task management with Django REST Framework.
+            Supports filtering, pagination, and token-based auth.
+          </p>
+          <div class="project-tech">
+            <span>Python</span><span>DRF</span><span>PostgreSQL</span>
+          </div>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="project-card reveal">
+          <div class="project-card-header">
+            <i class="ph ph-folder-notch-open project-icon"></i>
+            <div class="project-links">
+              <a href="https://github.com/Visudhan" target="_blank" rel="noopener" aria-label="GitHub">
+                <i class="ph ph-github-logo"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Weather Dashboard</h3>
+          <p class="project-desc">
+            Live weather app consuming a third-party API with dynamic
+            backgrounds and city search functionality.
+          </p>
+          <div class="project-tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>API</span>
+          </div>
+        </article>
+
+        <!-- Project 6 -->
+        <article class="project-card reveal">
+          <div class="project-card-header">
+            <i class="ph ph-folder-notch-open project-icon"></i>
+            <div class="project-links">
+              <a href="https://github.com/Visudhan" target="_blank" rel="noopener" aria-label="GitHub">
+                <i class="ph ph-github-logo"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">DSA Practice Tracker</h3>
+          <p class="project-desc">
+            Personal tracker for data structures & algorithms progress.
+            Categorized by pattern with difficulty ratings.
+          </p>
+          <div class="project-tech">
+            <span>Python</span><span>Django</span><span>HTML/CSS</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       LEARNING JOURNEY SECTION
+  ════════════════════════════════════════════ -->
+  <section id="journey" class="section journey">
+    <div class="container">
+      <h2 class="section-title reveal">
+        <span class="section-number">04.</span> Learning Journey
+      </h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2025 — Present</span>
+            <h3>Backend Development Deep-Dive</h3>
+            <p>Focused on Django, REST APIs, database design, and building
+              production-ready applications. Exploring Flask as an additional tool.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2024 — 2025</span>
+            <h3>Web Development Fundamentals</h3>
+            <p>Mastered HTML, CSS, and JavaScript. Built multiple front-end
+              projects and started learning Python for backend development.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2024</span>
+            <h3>Data Structures & Algorithms</h3>
+            <p>Began pattern-wise DSA practice in Python. Focused on arrays,
+              strings, and fundamental problem-solving techniques.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2023 — 2024</span>
+            <h3>Computer Science Foundations</h3>
+            <p>Started my CS journey — learned programming basics, explored
+              different languages, and discovered my passion for building software.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Ongoing</span>
+            <h3>AI Tools & Freelancing</h3>
+            <p>Exploring AI-powered development workflows, prompt engineering,
+              and freelancing to deliver real-world solutions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CONTACT SECTION
+  ════════════════════════════════════════════ -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2 class="section-title reveal">
+        <span class="section-number">05.</span> Get In Touch
+      </h2>
+      <p class="contact-subtitle reveal">
+        Have a project in mind or just want to say hello? I'd love to hear from you.
+      </p>
+
+      <div class="contact-grid">
+        <!-- Contact Info -->
+        <div class="contact-info reveal">
+          <a href="mailto:visudhan7525@gmail.com" class="contact-link" id="contactEmail">
+            <i class="ph ph-envelope-simple"></i>
+            <span>visudhan7525@gmail.com</span>
+          </a>
+          <a href="https://github.com/Visudhan" target="_blank" rel="noopener" class="contact-link" id="contactGithub">
+            <i class="ph ph-github-logo"></i>
+            <span>github.com/Visudhan</span>
+          </a>
+          <a href="https://instagram.com/vishudhann" target="_blank" rel="noopener" class="contact-link"
+            id="contactInstagram">
+            <i class="ph ph-instagram-logo"></i>
+            <span>@vishudhann</span>
+          </a>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your message…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
+            Send Message <i class="ph ph-paper-plane-tilt"></i>
+          </button>
+          <p class="form-status" id="formStatus"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-socials">
+        <a href="https://github.com/Visudhan" target="_blank" rel="noopener" aria-label="GitHub">
+          <i class="ph ph-github-logo"></i>
+        </a>
+        <a href="mailto:visudhan7525@gmail.com" aria-label="Email">
+          <i class="ph ph-envelope-simple"></i>
+        </a>
+        <a href="https://instagram.com/vishudhann" target="_blank" rel="noopener" aria-label="Instagram">
+          <i class="ph ph-instagram-logo"></i>
+        </a>
+      </div>
+      <p class="footer-copy">
+        &copy; 2026 Visud. Built with passion &amp; code.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
